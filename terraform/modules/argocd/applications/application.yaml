@@ -8,6 +8,8 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
   project: default
+  syncPolicy:
+    automated: {}
   source:
     path: ${configuration_path}
     repoURL: ${configuration_git_repository}
